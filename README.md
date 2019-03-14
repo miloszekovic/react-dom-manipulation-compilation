@@ -1,3 +1,16 @@
+# React DOM manipulation - Compilation
+Various manipulations with the DOME in the ReactJS
+
+- sliders
+- counters
+- modals
+- toggle content
+- toggle buttons
+- active classes
+- ...
+
+------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
