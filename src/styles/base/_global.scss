@@ -1,0 +1,89 @@
+/* global */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $dark;
+    color: $light;
+    padding-bottom: 50px;
+    @include font-size(1.8, 3.4);
+
+    @media screen and (max-width: 1080px) {
+        @include font-size(1.5, 2.8);
+    }
+}
+
+body, 
+body *,
+input, 
+textarea,
+select {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a { 
+    color: $green;
+    text-decoration: none;
+    
+    &:hover {
+        color: $light;
+        @extend .hov;
+    }
+    
+    &:active {
+        @extend .act;
+    }
+
+    &:focus {
+        outline: 0;
+        border: 0;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 700;
+    @include font-size(7.5, 8);
+    margin-bottom: 40px;
+
+    strong {
+
+        i {
+            font-style: normal;
+
+            @media screen and (max-width: 470px) {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1880px) {
+        @include font-size(6.5, 7);
+    }
+}
+
+p {
+    padding-bottom: 20px;
+
+    &.big {
+        @include font-size(2.2, 4.8);
+
+        @media screen and (max-width: 1080px) {
+            @include font-size(1.8, 4);
+        }
+    }
+}
+
+/* layout */
+section {
+
+}
+
+.container {
+    margin: $center;
+    width: 70%;
+}
